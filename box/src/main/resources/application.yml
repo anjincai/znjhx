@@ -1,0 +1,18 @@
+server:
+  port: 8201
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://peer1:8100/eureka/
+
+spring:
+  application:
+    name: boxserver
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databasename=BankOfChina
+    username: sa
+    password: 123qwe
+
+
